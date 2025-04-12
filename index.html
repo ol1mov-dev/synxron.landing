@@ -8,6 +8,48 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+	<!-- Sidebar -->
+	<div id="sidebar" class="sidebar">
+		<button class="closeBtn" id="closeBtn">&times;</button>
+		<h2>Меню</h2>
+		<div class="dropdown">
+			<div class="dropdown-header">
+				<span>Платформа</span>
+				<span class="arrow">&#9650;</span>
+			</div>
+			<div class="dropdown-content">
+				<a href="#"><i class="fa-regular fa-star"></i>База знаний</a>
+				<a href="#"><i class="fa-solid fa-users"></i>Совместная работа</a>
+				<a href="#"><i class="fa-solid fa-table-cells"></i>Умные таблицы</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="dropdown-header">
+				<span>Аналитика</span>
+				<span class="arrow">&#9650;</span>
+			</div>
+			<div class="dropdown-content">
+				<a href="#"><i class="fa-solid fa-chart-line"></i>Отчёты</a>
+				<a href="#"><i class="fa-solid fa-chart-pie"></i>Графики</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="dropdown-header">
+				<span>Инструменты</span>
+				<span class="arrow">&#9650;</span>
+			</div>
+			<div class="dropdown-content">
+				<a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>Настройки</a>
+				<a href="#"><i class="fa-solid fa-bug"></i>Отладка</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Оверлей -->
+	<div id="overlay" class="overlay"></div>
+
 	<header>
 		<div class="navbar">
 			<div class="navbar__logo">
@@ -27,7 +69,9 @@
 			<div class="buttons">
 				<button class="btn contact">Связаться с нами</button>
 				<button class="btn try">Попробовать →</button>
+				<button id="menuBtn" class="menuBtn">☰ Меню</button>
 			</div>
+
 		</div>
 	</header>
 
@@ -250,4 +294,5 @@
 	</footer>
 
 </body>
+<script src="./js/script.js"></script>
 </html>

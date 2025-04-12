@@ -5,6 +5,8 @@ body {
     background: linear-gradient(135deg, #f5fbff, #ffffff);
     overflow-x: hidden;
 }
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,6 +15,7 @@ body {
     padding: 15px 50px;
     color: white;
     border-radius: 0 0 15px 15px;
+
 }
 
 .navbar__menu ul {
@@ -56,30 +59,28 @@ body {
     border: 1px solid #fff;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
+    .navbar__menu{
+        display: none;
     }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
+
+    .navbar .try, .navbar .contact{
+        display: none;
     }
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px;
-    }
-    .hero-content {
-        max-width: 100%;
-    }
-}
-@media (max-width: 768px) {
+
     .navbar {
         padding: 15px 20px;
     }
+}
+@media (max-width: 768px) {
+
     .buttons .btn {
         padding: 8px 15px;
         font-size: 14px;
